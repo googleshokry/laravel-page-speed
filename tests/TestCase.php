@@ -1,9 +1,9 @@
 <?php
 
-namespace RenatoMarinho\LaravelPageSpeed\Test;
+namespace GoogleShokry\LaravelPageSpeed\Test;
 
 use Illuminate\Http\Request;
-use RenatoMarinho\LaravelPageSpeed\ServiceProvider;
+use GoogleShokry\LaravelPageSpeed\ServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra

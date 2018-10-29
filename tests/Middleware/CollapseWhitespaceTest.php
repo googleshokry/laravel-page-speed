@@ -1,11 +1,11 @@
 <?php
 
-namespace RenatoMarinho\LaravelPageSpeed\Test\Middleware;
+namespace GoogleShokry\LaravelPageSpeed\Test\Middleware;
 
 use Illuminate\Http\Request;
 use Mockery as m;
-use RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace;
-use RenatoMarinho\LaravelPageSpeed\Test\TestCase;
+use GoogleShokry\LaravelPageSpeed\Middleware\CollapseWhitespace;
+use GoogleShokry\LaravelPageSpeed\Test\TestCase;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

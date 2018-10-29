@@ -3,9 +3,9 @@
 [![Laravel 5.3][icon-l53]][link-laravel]
 [![Laravel 5.4][icon-l54]][link-laravel]
 [![Laravel 5.5][icon-l55]][link-laravel]
-[![Build Status](https://travis-ci.org/renatomarinho/laravel-page-speed.svg?branch=master)](https://travis-ci.org/renatomarinho/laravel-page-speed)
-[![License](https://poser.pugx.org/renatomarinho/laravel-page-speed/license)](https://packagist.org/packages/renatomarinho/laravel-page-speed)
-[![Latest Stable Version](https://poser.pugx.org/renatomarinho/laravel-page-speed/version)](https://packagist.org/packages/renatomarinho/laravel-page-speed)
+[![Build Status](https://travis-ci.org/googleshokry/laravel-page-speed.svg?branch=master)](https://travis-ci.org/googleshokry/laravel-page-speed)
+[![License](https://poser.pugx.org/googleshokry/laravel-page-speed/license)](https://packagist.org/packages/googleshokry/laravel-page-speed)
+[![Latest Stable Version](https://poser.pugx.org/googleshokry/laravel-page-speed/version)](https://packagist.org/packages/googleshokry/laravel-page-speed)
 [![Total Downloads][icon-downloads]][link-downloads]
 
 ### Simple package to minify HTML output on demand which results in a 35%+ optimization.
@@ -15,7 +15,7 @@
 You can install the package via composer:
 
 ```bash
-$ composer require renatomarinho/laravel-page-speed
+$ composer require googleshokry/laravel-page-speed
 ```
 ### Laravel 5.5 and up
  
@@ -23,30 +23,30 @@ You don't have to do anything else, this package uses the Package Auto-Discovery
 
 ### Laravel 5.4 or 5.3
 
-Add the Service Provider to your **config/app.php**: `RenatoMarinho\LaravelPageSpeed\ServiceProvider::class`
+Add the Service Provider to your **config/app.php**: `GoogleShokry\LaravelPageSpeed\ServiceProvider::class`
 
  *This is required for publishing the configuration file:* 
  
 #### Publish configuration file
 
- `php artisan vendor:publish --provider="RenatoMarinho\LaravelPageSpeed\ServiceProvider"`
+ `php artisan vendor:publish --provider="GoogleShokry\LaravelPageSpeed\ServiceProvider"`
 
 #### Register Middlewares
 
-Next, the `\RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class` and other middleware must be registered in the kernel:
+Next, the `\GoogleShokry\LaravelPageSpeed\Middleware\CollapseWhitespace::class` and other middleware must be registered in the kernel:
 
 ```php
 //app/Http/Kernel.php
 
 protected $middleware = [
     ...
-    \RenatoMarinho\LaravelPageSpeed\Middleware\InlineCss::class,
-    \RenatoMarinho\LaravelPageSpeed\Middleware\ElideAttributes::class,
-    \RenatoMarinho\LaravelPageSpeed\Middleware\InsertDNSPrefetch::class,
-    \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveComments::class,
-    \RenatoMarinho\LaravelPageSpeed\Middleware\TrimUrls::class,
-    \RenatoMarinho\LaravelPageSpeed\Middleware\RemoveQuotes::class,
-    \RenatoMarinho\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
+    \GoogleShokry\LaravelPageSpeed\Middleware\InlineCss::class,
+    \GoogleShokry\LaravelPageSpeed\Middleware\ElideAttributes::class,
+    \GoogleShokry\LaravelPageSpeed\Middleware\InsertDNSPrefetch::class,
+    \GoogleShokry\LaravelPageSpeed\Middleware\RemoveComments::class,
+    \GoogleShokry\LaravelPageSpeed\Middleware\TrimUrls::class,
+    \GoogleShokry\LaravelPageSpeed\Middleware\RemoveQuotes::class,
+    \GoogleShokry\LaravelPageSpeed\Middleware\CollapseWhitespace::class,
 ]
 ```
 
@@ -330,12 +330,12 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [icon-l53]: https://img.shields.io/badge/Laravel-5.3-brightgreen.svg?style=flat-square
 [icon-l54]: https://img.shields.io/badge/Laravel-5.4-brightgreen.svg?style=flat-square
 [icon-l55]: https://img.shields.io/badge/Laravel-5.5-brightgreen.svg?style=flat-square
-[icon-downloads]: https://poser.pugx.org/renatomarinho/laravel-page-speed/downloads
+[icon-downloads]: https://poser.pugx.org/googleshokry/laravel-page-speed/downloads
 
 [link-laravel]: https://laravel.com
-[link-downloads]: https://packagist.org/packages/renatomarinho/laravel-page-speed
+[link-downloads]: https://packagist.org/packages/googleshokry/laravel-page-speed
 [link-before]: https://i.imgur.com/cN3MWYh.png
 [link-after]: https://i.imgur.com/IKWKLkL.png
-[link-author]: https://github.com/renatomarinho
+[link-author]: https://github.com/googleshokry
 [link-contributors]: ../../contributors
 [link-file-download]: https://laravel.com/docs/5.5/responses#file-downloads

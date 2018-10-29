@@ -1,10 +1,10 @@
 <?php
 
-namespace RenatoMarinho\LaravelPageSpeed\Test\Config;
+namespace GoogleShokry\LaravelPageSpeed\Test\Config;
 
 use Illuminate\Http\Request;
-use RenatoMarinho\LaravelPageSpeed\Middleware\TrimUrls;
-use RenatoMarinho\LaravelPageSpeed\Test\TestCase;
+use GoogleShokry\LaravelPageSpeed\Middleware\TrimUrls;
+use GoogleShokry\LaravelPageSpeed\Test\TestCase;
 
 class ConfigTest extends TestCase
 {

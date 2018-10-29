@@ -1,5 +1,5 @@
 {
-  "name": "renatomarinho/laravel-page-speed",
+  "name": "googleshokry/laravel-page-speed",
   "description": "Laravel Page Speed",
   "keywords": [
     "laravel",
@@ -11,8 +11,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Renato Marinho",
-      "email": "renato.marinho@s2move.com"
+      "name": "Googleshokry",
+      "email": "sms.shokry.mohamed@gmail.com"
     }
   ],
   "require": {
@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "RenatoMarinho\\LaravelPageSpeed\\": "src/"
+      "GoogleShokry\\LaravelPageSpeed\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "RenatoMarinho\\LaravelPageSpeed\\Test\\": "tests"
+      "GoogleShokry\\LaravelPageSpeed\\Test\\": "tests"
     }
   },
   "scripts": {
@@ -45,7 +45,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "RenatoMarinho\\LaravelPageSpeed\\ServiceProvider"
+        "GoogleShokry\\LaravelPageSpeed\\ServiceProvider"
       ]
     }
   }

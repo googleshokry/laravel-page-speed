@@ -1,9 +1,9 @@
 <?php
 
-namespace RenatoMarinho\LaravelPageSpeed\Test\Middleware;
+namespace GoogleShokry\LaravelPageSpeed\Test\Middleware;
 
-use RenatoMarinho\LaravelPageSpeed\Middleware\RemoveQuotes;
-use RenatoMarinho\LaravelPageSpeed\Test\TestCase;
+use GoogleShokry\LaravelPageSpeed\Middleware\RemoveQuotes;
+use GoogleShokry\LaravelPageSpeed\Test\TestCase;
 
 class RemoveQuotesTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace RenatoMarinho\LaravelPageSpeed;
+namespace GoogleShokry\LaravelPageSpeed;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
